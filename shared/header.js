@@ -12,13 +12,15 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     header: {
-        height: 75,
-        backgroundColor: '#43a047',
-        paddingTop: 35,
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        alignItems: 'center'
     },
     title: {
         fontSize: 22,
-        textAlign: 'center',
-        color: '#e8f5e9'
+        color: '#e8f5e9',
+        letterSpacing: 2,
+        paddingBottom: 30,
     }
 });
