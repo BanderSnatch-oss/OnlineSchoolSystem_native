@@ -7,11 +7,15 @@ import SignUp from './screens/signup';
 import Header from './shared/header';
 import { globalStyles } from './styles/global'
 import Navigator from './routes/drawer';
+import { Provider } from 'react-redux'
+import { store } from './redux/store'
 
 export default function App() {
 
   return (
-    <Navigator />
+    <Provider store={store}>
+      <Navigator />
+    </Provider>
     // <View style={globalStyles.container}>
     //   <Header />
     //   <Home />
