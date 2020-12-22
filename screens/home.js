@@ -39,13 +39,11 @@ function Home({ navigation, user, userDetails }) {
 
     return (
         <View>
-            <Text style={globalStyles.text}>Hi {user.name}</Text>
+            <Text style={globalStyles.text}>Welcome, {user.name}</Text>
+            <Text style={globalStyles.textSmall}>here are {stats[0] && stats[0].studentName} grades</Text>
             {
                 stats && stats.map((stat, i) => <StatsCard stat={stat} key={i} />)
             }
-            {/* <Text style={globalStyles.text}> {stats[0] && `${stats[0].subjectName} first grade : ${stats[0].firstGrade}`}</Text>
-            <Text style={globalStyles.text}> {stats[0] && `${stats[0].subjectName} second grade : ${stats[0].secondGrade}`}</Text>
-            <Text style={globalStyles.text}> {stats[0] && `${stats[0].subjectName} final grade : ${stats[0].finalGrade}`}</Text> */}
             <Button title='Signout' color='#1b5e20' onPress={pressHandler} />
             <StatusBar style="auto" />
         </View>

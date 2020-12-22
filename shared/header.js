@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Header() {
     return (
         <View style={styles.header}>
-            <Text style={styles.title}>Corona School</Text>
+            <Text style={styles.title}>Alpha Plus</Text>
         </View>
     );
 }

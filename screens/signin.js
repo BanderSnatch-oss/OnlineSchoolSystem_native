@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react';
-import { Button, StyleSheet, Text, TextInput, View, TouchableWithoutFeedback, Keyboard } from 'react-native';
+import { Button, StyleSheet, Text, TextInput, View, Image, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { globalStyles } from '../styles/global'
 import AsyncStorage from '@react-native-community/async-storage';
 import { connect } from "react-redux"
@@ -80,6 +80,9 @@ function SignIn({ navigation, user, userDetails, setUserDetails, setCurrentUser 
         <View style={globalStyles.container}>
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={globalStyles.form}>
+                    <Image source={{ uri: 'https://media.discordapp.net/attachments/762721371809382421/790998137950830592/alphaplus-logo1.png' }}
+                        style={{ width: 80, height: 80 }}
+                    />
                     <Text style={styles.text}>SignIn</Text>
                     <TextInput
                         style={globalStyles.input}
@@ -109,7 +112,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         padding: 10,
         textAlign: 'center',
-        color: '#1b5e20'
+        color: '#2e7d32'
     },
     textSm: {
         fontSize: 16,
