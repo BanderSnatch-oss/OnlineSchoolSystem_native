@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 export const globalStyles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#a5d6a7',
+        backgroundColor: '#c8e6c9',
         // 50: '#e8f5e9';
         // 100: '#c8e6c9';
         // 200: '#a5d6a7';
@@ -21,7 +21,16 @@ export const globalStyles = StyleSheet.create({
     },
     text: {
         fontSize: 30,
-        padding: 10,
+        padding: 7,
+        textAlign: 'center'
+    },
+    textSmall: {
+        fontSize: 20,
+        padding: 5,
+        textAlign: 'center'
+    },
+    title: {
+        fontSize: 17,
         textAlign: 'center'
     },
     form: {

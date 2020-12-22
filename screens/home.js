@@ -39,7 +39,8 @@ function Home({ navigation, user, userDetails }) {
 
     return (
         <View>
-            <Text style={globalStyles.text}>Hi {user.name}</Text>
+            <Text style={globalStyles.text}>Welcome, {user.name}</Text>
+            <Text style={globalStyles.textSmall}>here are {stats[0] && stats[0].studentName} grades</Text>
             {
                 stats && stats.map((stat, i) => <StatsCard stat={stat} key={i} />)
             }
