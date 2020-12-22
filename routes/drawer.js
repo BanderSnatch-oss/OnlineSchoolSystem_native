@@ -8,15 +8,13 @@ import SignStack from './signStack';
 
 // drawer navigation options
 
-const homeDrawer = AsyncStorage.getItem("Authorization") ? {
-    screen: HomeStack,
-} : {}
-
 const RootDrawerNavigator = createDrawerNavigator({
     SignStack: {
         screen: SignStack,
     },
-    Home: homeDrawer
+    Home: {
+        screen: HomeStack,
+    }
 });
 
 export default createAppContainer(RootDrawerNavigator);
